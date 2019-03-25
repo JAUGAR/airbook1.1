@@ -32,16 +32,72 @@
 
     -->
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            var table=null;
-            $("#table").html(
-                table+=
 
-            );
 
-        })
-    </script>
+    <style>
+        *{margin: 0;padding: 0}
+/*        .box{width: 960px;height: 630px;background-color: rgba(223, 223, 223, 0.83);padding: 0 50px}
+        ul{width: 100%;height: 100%}
+        li{list-style: none}*/
+        .airport{
+            width: 100%;
+            height: 110px;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+        .component{display: inline-block;
+            padding: 28px 5px 24px;
+            vertical-align: top;}
+        .logo{width: 168px}
+        .img_chunqiu{
+            margin-left: -20px;
+            margin-right: 4px;
+            vertical-align: top;
+            width: 16px;
+            height: 16px;
+        }
+        .logo_item{padding-left: 20px;
+            margin: 0 3px 5px 10px;}
+        .right{width: 156px;text-align: right;}
+        .left{width: 156px;text-align: left}
+        .price{width: 150px;text-align: center}
+        .time{ font-size: 25px;
+            line-height: 25px;}
+        .arrow{width: 86px;
+            height: 40px;
+            background: url("flight_arrow.png")
+            no-repeat center right
+        }
+        .ticket span{
+            color: #999;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        .price_item{font-size: 28px;
+            color: #BB0000;
+            line-height: 100%;
+            text-align: right;}
+        .price2_item{
+            line-height: 16px;
+            color: #999;
+            white-space: nowrap;}
+        .button_item{
+            color: #fff;
+            background-color: #337ab7;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            border: 1px #2e6da4 solid;
+            border-radius: 4px;
+        }
+    </style>
+
+
+
 
 
 </head>
@@ -92,10 +148,12 @@
 
     </div>
 
+
     <div class="main fly-home-main" style="border:0px; border-style:solid">
+
         <div class="layui-inline fly-home-jie">
             <div class="fly-panel">
-                <h3 class="fly-panel-title" th:text="${user.uname}+'的机票信息'"></h3>
+                <h2 class="fly-panel-title" th:text="${user.uname}+'的机票信息'"></h2>
 
                 <div class="layui-inline fly-home-da " style="width: 960px">
                 <ul class="home-jieda" th:each="userlist:${userlist}">
@@ -131,7 +189,7 @@
         <hr class="layui-bg-green" style="height:2px;">
         <div class="layui-inline fly-home-da">
             <div class="fly-panel">
-                <h3 class="fly-panel-title">贤心 最近的回答</h3>
+                <h2 class="fly-panel-title">贤心 最近的回答</h2>
                 <ul class="home-jieda">
                     <li>
                         <p>

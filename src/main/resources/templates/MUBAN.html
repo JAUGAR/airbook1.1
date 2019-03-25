@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin: 0;padding: 0}
+        ul{width: 100%;height: 100%}
+        li{list-style: none}
+        .airport{
+            width: 100%;
+            height: 110px;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+        .component{display: inline-block;
+            padding: 28px 5px 24px;
+            vertical-align: top;}
+        .logo{width: 168px}
+        .img_chunqiu{
+            margin-left: -20px;
+            margin-right: 4px;
+            vertical-align: top;
+            width: 16px;
+            height: 16px;
+        }
+        .logo_item{padding-left: 20px;
+            margin: 0 3px 5px 10px;}
+        .right{width: 156px;text-align: right;}
+        .left{width: 156px;text-align: left}
+        .price{width: 150px;text-align: center}
+        .time{ font-size: 25px;
+            line-height: 25px;}
+        .arrow{width: 86px;
+            height: 40px;
+            background: url("flight_arrow.png")
+            no-repeat center right
+        }
+        .ticket span{
+            color: #999;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        .price_item{font-size: 28px;
+            color: #BB0000;
+            line-height: 100%;
+            text-align: right;}
+        .price2_item{
+            line-height: 16px;
+            color: #999;
+            white-space: nowrap;}
+        .button_item{
+            color: #fff;
+            background-color: #337ab7;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            border: 1px #2e6da4 solid;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="airport">
+            <div class="component logo">
+                <div class="logo_item">
+                    <strong><img class="img_chunqiu" height="32" width="32" src="HO.png">春秋航空</strong>
+                    <span>H34O7</span>
+                </div>
+                <div class="plane_item">
+                    <span style="color: gray">空中客车A123(中型)</span>
+                </div>
+            </div>
+            <div class="component right">
+                <div class="time_item"><strong class="time">5月3日</strong></div>
+                <div class="airport_item">虹桥国际机场T2</div>
+            </div>
+            <div class="component center"><div class="arrow"></div></div>
+            <div class="component left">
+                <div class="time_item"><strong class="time">5月4日</strong></div>
+                <div class="airport_item">白云国际机场T1</div>
+            </div>
+            <div class="component ticket">
+                <div><span>剩余票数</span></div>
+                <div><span>20</span></div>
+            </div>
+            <div class="component price">
+                <div><span class="price_item">998</span></div>
+                <div class="price2_item"><span>单程总价</span></div>
+            </div>
+            <div class="component order">
+                <button type="button" class="button_item">预定</button>
+            </div>
+        </li>
+    </ul>
+
+
+</body>
+</html>
